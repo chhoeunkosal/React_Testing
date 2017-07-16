@@ -8,7 +8,7 @@ export default class ContentA extends React.Component{
         return(
             <div>
                <Switch>
-                    <Route exact path='/' component={Homepage}/>
+                    <Route exact path='/'render={() => <Homepage myCount={3}/>}/>
                     <Route path='/Product' component={Product}/>
                 </Switch> 
             </div>
